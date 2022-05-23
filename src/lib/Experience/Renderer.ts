@@ -8,14 +8,14 @@ export default class Renderer {
 	canvas: HTMLCanvasElement | undefined;
 	sizes: Sizes;
 	scene: THREE.Scene;
-	camera: THREE.Camera;
+	camera: THREE.PerspectiveCamera;
 	instance: THREE.WebGLRenderer | undefined;
 	constructor() {
 		this.experience = new Experience();
 		this.canvas = this.experience.canvas;
 		this.sizes = this.experience.sizes;
 		this.scene = this.experience.scene;
-		this.camera = this.experience.camera;
+		this.camera = this.experience.camera.instance;
 
 		this.setInstance();
 	}
