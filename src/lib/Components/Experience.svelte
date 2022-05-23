@@ -1,4 +1,4 @@
-<canvas bind:this={canvas} />
+<canvas bind:this={canvas} width={32} height={32} />
 
 <script lang="ts">
 	import Experience from '$lib/Experience';
